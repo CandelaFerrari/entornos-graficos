@@ -1,0 +1,682 @@
+﻿Práctica HTML
+Entornos Gráficos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Integrantes
+________________
+
+
+Lucas Córdoba                                       Juan Cruz Durán
+Selene Brassart                                      Candela Ferrari
+Ejercitación 1
+
+
+HTML (HyperText Markup Language) es un lenguaje de marcado definido como estándar para la World Wide Web o más conocido como WWW, es un lenguaje que utiliza etiquetas para definir la estructura de una página web de forma legible tanto como para desarrolladores como para los navegadores.
+Sus primeros años se dedicaron al desarrollo del lenguaje con la finalidad de describir documentos científicos a principios de los noventa, pero rápidamente fue cambiando su norte en la medida que se hizo notoria su amplia capacidad de aplicación en el nuevo mundo del internet. En el año 1995 hubo un intento de masificar la utilización de HTML en su versión 3.0 que no tuvo éxito. En base a esto se continuó el desarrollo con un enfoque más pragmático hasta llegar al HTML 3.2 que se finaliza dos años después y del que deriva su versión más estable durante mucho tiempo el HTML 4.1.
+Durante varios años posteriores se fueron abriendo diferentes grupos de trabajo que continuaron en el estudio del lenguaje de marcado pero intentando desarrollar un equivalente basado en XML (eXtensible Markup Language), el XHTML. Estos grupos de trabajo decantaron sus investigaciones en varios papers distintos en los que se utilizaba HTML como maqueta pero no obtuvieron demasiado apoyo en su finalidad práctica.
+Con el pasar de los años y el surgimiento de distintas tecnologías como Xforms revivió la necesidad de un HTML robusto y estandarizado para la web y se comenzó a trabajar en HTML5, versión que extendida y popularizada actualmente, que incluye la posibilidad de añadir archivos multimedia y marcar código ejecutable, y buscó unificar los distintos intérpretes desarrollados por cada navegador para que un mismo HTML presente pocas diferencias independientemente de donde se levante.
+
+
+2)  El W3C (World Wide Web Consortium) recomienda seguir los siguientes principios básicos para la creación de documentos con HTML:
+
+
+* Estructurar el documento con elementos semánticos: HTML proporciona una gran cantidad de elementos semánticos, como encabezados, 
+párrafos, listas y secciones. Es importante utilizar estos elementos de manera adecuada para darle al documento una estructura clara y significativa.
+
+
+* Usar atributos para mejorar la accesibilidad: Los atributos de HTML pueden ser utilizados para proporcionar información adicional sobre el contenido de un documento, lo que puede ayudar a mejorar la accesibilidad del mismo para personas con discapacidades visuales
+o auditivas.
+
+
+* Separar el contenido de la presentación: Es importante separar el contenido del documento de su presentación visual utilizando CSS (Cascading Style Sheets). De esta manera, se puede cambiar el aspecto visual del documento sin tener que cambiar su estructura o contenido.
+
+
+* Utilizar URLs significativas y accesibles: Los URLs (Uniform Resource Locators) son la forma en que los navegadores web localizan y acceden a los documentos. Es importante utilizar URLs que sean significativos y descriptivos, y que sean accesibles para todos los usuarios.
+
+
+* Utilizar formatos de archivo adecuados: HTML es un lenguaje de marcado utilizado para crear documentos de texto. Es importante utilizar los formatos de archivo adecuados para otros tipos de contenido, como imágenes, audio y video.
+
+
+Siguiendo estos principios básicos, se pueden crear documentos HTML bien estructurados, accesibles y compatibles con diferentes dispositivos y navegadores web.
+
+
+3)  Se considera que un elemento o atributo está desaprobado cuando su uso es desalentado, pero todavía es válido en la versión actual de HTML. El W3C puede desaprobar un elemento o atributo por diferentes motivos, por ejemplo, porque existen elementos o atributos mejores para realizar la misma función, o porque su uso puede afectar negativamente a la accesibilidad o la interoperabilidad del documento.
+Se considera que un elemento o atributo está obsoleto cuando su uso ya no es válido en la versión actual de HTML. En otras palabras, un elemento o atributo obsoleto ya no forma parte de las especificaciones de HTML y no se recomienda su uso en documentos nuevos. Los elementos o atributos obsoletos pueden haber sido reemplazados por otros elementos o atributos, o pueden haber sido eliminados porque se considera que su uso es innecesario o problemático.
+
+
+4)  DTD (Document Type Definition) es un conjunto de reglas que especifican la estructura y el tipo de contenido que puede aparecer en un documento de HTML. Se utiliza para validar documentos y comprobar que cumplen con las normas y requisitos especificados en las especificaciones del lenguaje.
+
+
+En la especificación de HTML 4.01, se contemplan tres posibles DTDs:
+
+
+→ Strict DTD: Este DTD especifica un conjunto estricto de reglas para la estructura y el tipo de contenido de un documento de HTML. Se recomienda su uso para documentos nuevos, ya que asegura una mayor compatibilidad con diferentes navegadores y dispositivos.
+
+
+→ Transitional DTD: Este DTD es más permisivo que el Strict DTD y permite ciertas construcciones que no están permitidas en el conjunto estricto de reglas. Se recomienda su uso para documentos más antiguos que no se pueden actualizar fácilmente a las normas más estrictas.
+
+
+→ Frameset DTD: Este DTD es similar al Transitional DTD, pero también incluye reglas específicas para el uso de marcos (frames) en un documento de HTML.
+
+
+5)  Los metadatos son información adicional que se puede agregar a un documento HTML para describir su contenido, estructura, formato, autoría, palabras clave, entre otros aspectos. Los metadatos son importantes para la indexación y el procesamiento automático de documentos por parte de los motores de búsqueda, las redes sociales y otros sistemas que acceden y procesan la información de la web. 
+En HTML, los metadatos se pueden especificar utilizando el elemento <meta>.
+
+
+Ejercitación 2
+
+
+2.a)        <!-- Código controlado el día 12/08/2009 -->
+
+
+Los tags <!-- y --> son para hacer un comentario, no son obligatorios.
+“Código controlado el día 12/08/2009” es el contenido del comentario.
+Se puede colocar en cualquier parte del documento.
+
+
+2.b)        <div id="bloque1">Contenido del bloque1</div>
+
+
+Los tags son <div> y </div> sirven para hacer una división y permite agrupar varios elementos de bloque.
+El tag de apertura <div> tiene como atributo el id, que permite establecer un identificador único para el bloque.
+
+
+2.c)        <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+
+
+El elemento <img> es un elemento vacío, no posee tag de cierre.
+Sus atributos son:
+
+
+* src = indica dónde se encuentra alojada la imagen a mostrar (obligatorio).
+* alt = agrega una descripción de la imagen dentro de la misma para que pueda leerse al mantener el ratón encima de ella (no es obligatorio, pero es una buena práctica). 
+* id = identificador (obligatorio).
+* name = nombre de la imagen (obligatorio).
+* width y height = ancho y alto de la imagen (obligatorio).
+* longdesc = descripción larga de la imagen (no es obligatorio).
+
+
+2.d)        <meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+
+El elemento <meta> es un elemento vacío, se incorpora en el encabezado de una página web y que resulta invisible para un visitante normal, pero de gran utilidad para navegadores u otros programas que puedan valerse de esta información.
+Sus atributos son:
+
+
+* name = nombre del tag.
+* lang = el idioma.
+* content = es el contenido que se quiere mostrar en los navegadores web.
+* http-equiv = para obtener información sobre los encabezados del mensaje de respuesta HTTP.
+
+
+2.e)        <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+rel="help">Resumen HTML </a>
+
+
+Los tags <a> y </a> es para Hypervínculos, estos permiten redirigir el usuario a otra página. Puede establecerse desde cualquier punto de un documento html.
+Sus atributos son:
+
+
+* href = el link de la página.
+* type = tipo de link.
+* hreflang = idioma de la página.
+* charset = se ha vuelto obsoleto en HTML5
+* rel = Una lista no ordenada de tipos de vínculos únicos, separados por espacios, que indican el significado que el recurso enlazado tiene para el documento actual (el que contiene al vínculo).
+
+
+2.f)         <table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">A</th>
+<th scope="col">B</th>
+<th scope="col">C</th>
+</tr>
+<tr>
+<th scope="row">1º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+
+Los tags <table> y </table> definen el comienzo y final de una tabla, es una etiqueta de bloque, se sitúa fuera de un párrafo.
+Los tags <caption> y </caption> definen el comienzo y final del título de la tabla.
+Los tags <tr> y </tr> define el comienzo y final de una fila de la tabla.
+Los tags <td> y </td> define el comienzo y final del contenido de una celda.
+Los tags <th> y </th> define el comienzo y final del contenido de una celda de encabezado.
+
+
+Los atributos de <table>: 
+width = ancho de la tabla.
+summary = se utiliza para proporcionar una descripción textual breve y concisa de la estructura y el contenido de la tabla.
+
+
+Los atributos de <caption>:
+align = define la posición del título.
+
+
+Los atributos de <th>:
+scope = puede ser "row" (fila) o "col" (columna), y se utiliza para indicar si el encabezado de celda se aplica a una fila completa o a una columna completa.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+Ejercitación 3
+
+
+a)              <a href="http://www.google.com.ar">Click aquí para ir a Google</a> 
+
+Crea un enlace que al clickearlo abre la página destino que está declarada en el href=”” (en este caso google) pero en la misma pestaña y ventana en la que se está trabajando.
+
+ <a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+
+
+Funciona de la misma manera que el de arriba, solo que al agregar el target="_blank" la página se abrirá en una pestaña nueva.
+
+
+<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+Agrega ciertos atributos que dan contexto a la etiqueta, en este caso, no tiene definido cual es el enlace por lo que no tiene funcionalidad práctica. el type= “text/html” indica que tipo de contenido contiene el enlace; hreflang=”es” indica que el lenguaje del contenido está en español; charset indica la codificación de los caracteres y rel=”help” está indicando que el enlace tiene una función de ayuda en RELación con el documento en el que estamos.
+
+
+ <a href="#">Click aquí para ir a Google</a>
+
+
+En este caso el href  sirve para indicar una etiqueta dentro del propio documento, por lo que no nos enviará a google, sino a otro lugar dentro del mismo sitio.
+
+
+
+
+<a href="#arriba">Click aquí para volver arriba</a>
+
+
+Nos enviará al div y/o otra etiqueta que tenga como id=”arriba”. Puede enviarnos hacia abajo, porque depende de donde se encuentre ubicada esa etiqueta en el documento.
+
+
+<a name="arriba" id="arriba"></a>
+
+
+Este ejemplo es bueno para establecer las diferencias entre “name” e “id”. Si bien ambos son identificadores, “name” se usa para identificar elementos en formularios y enviar datos al servidor, mientras que id se usa para identificar de manera única elementos en una página web para aplicar estilos, manipular con JavaScript o establecer enlaces de anclaje.
+Esa etiqueta está funcionando como ancla y es llamada desde la etiqueta de arriba, por lo que nos desplazaremos hacia la ubicación de ésta de seguir el enlace.
+
+
+b) <p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">
+Click aquí</a></p>
+
+
+En el primer caso, se ingresa una imagen sin enlace y luego se agrega un enlace que lleva a google clickeando el “Click aquí”.
+
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+En este segundo caso, la imagen es la que lleva a google, debido a la ubicación de la apertura y cierre de la etiqueta <a></a>. El “click aquí” solo queda como texto plano.
+
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+
+
+En este tercer caso, ambos ítems se convierten en un único link (tanto la imagen como el texto) y llevan a google.
+
+
+<p><a href="http://www.google.com.ar"><img src="images/Logo UTN.png" 
+alt="imagen1" /></a><a href="http://www.google.com.ar">Click aquí</a></p>
+
+
+En este último caso, hay 2 links distintos en un mismo párrafo. Clickeando cualquiera de los 2, iremos a google.
+  
+
+c)
+<ul>
+                <li>xxx</li>
+                <li>yyy</li>
+                <li>zzz</li>
+</ul>
+Esto es una lista NO numerada de 3 elementos.
+
+
+<ol>
+<li>xxx</li>
+<li>yyy</li>
+<li>zzz</li>
+</ol>
+Esto es una lista numerada de 3 elementos distintos.
+
+
+
+
+<ol >
+<li>xxx</li>
+</ol>
+<ol>
+<li value="2">yyy</li>
+</ol>
+<ol>
+<li value="3">zzz</li>
+</ol>
+En este caso son 3 listas distintas en el que el primer elemento es cambiado su valor de inicio, y el contenido de cada elemento se encuentra bajo las etiquetas <li></li>
+
+
+<blockquote>
+                <p>1. xxx<br />
+                2. yyy<br />
+                3. zzz</p>
+ </blockquote>
+En este caso se usó un bloque utilizado para realizar citas de ciertos autores, y entre las etiquetas de párrafo, se insertó la lista manualmente incluidos los saltos de linea de la etiqueta <br />
+
+
+Abajo se muestra la salida de cada porción de código html, teniendo en cuenta que se agregó una etiqueta Style: color, para modificar los colores y simplificar la visualización.
+  
+
+d)
+<table border="1" width="300">
+                <tr>
+                    <th>Columna 1</th>
+                    <th>Columna 2</th>
+                </tr>
+                <tr>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                </tr>
+                <tr>
+                    <td>Celda 3</td>
+                    <td>Celda 4</td>
+                </tr>
+</table>
+________________
+
+
+<table border="1" width="300">
+                <tr>
+                    <td><div align="center"><strong>Columna1</strong></div></td>
+                    <td><div align="center"><strong>Columna2</strong></div></td>
+                </tr>
+                <tr>
+                    <td>Celda 1</td>
+                    <td>Celda 2</td>
+                </tr>
+                <tr>
+                    <td>Celda 3</td>
+                    <td>Celda 4</td>
+                </tr>
+    </table>
+
+
+Generan dos tablas exactamente iguales solo que la primera utiliza las etiquetas de celdas de encabezado <th></th>.
+El segundo código realiza modificaciones manuales sobre celdas comunes, como centrar el contenido y ponerlo en negrita.
+Vale destacar que en el código de abajo, las 3 filas de la tabla tienen el mismo nivel jerárquico mientras que la primera es una buena práctica para ayudar a los navegadores a definir el formato de la tabla.
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+e)
+    <table width="200">
+                <caption>
+                    Título
+                </caption>
+                <tr>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                </tr>
+    </table>
+________________
+
+
+<table width="200">
+        <tr>
+            <td colspan="3"><div align="center">Título</div></td>
+        </tr>
+        <tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+
+
+        <tr>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+            <td bgcolor="#dddddd">&nbsp;</td>
+        </tr>
+</table>
+
+
+Como antes, la salida es exactamente la misma entre los 2 códigos, la primera utilizando la etiqueta <caption>Título</caption> para definir el título de la tabla, mientras que la segunda combina las primeras 3 tablas sin cambiarle el color y escribe dentro de su contenido el título.   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+f) <table width="200">
+                <tr>
+                    <td colspan="3"><div align="center">Título</div></td>
+                </tr>
+                <tr>
+                    <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                </tr>
+            </table>
+________________
+
+
+<table width="200">
+                <tr>
+                    <td colspan="3"><div align="center">Título</div></td>
+                </tr>
+                <tr>
+                    <td colspan="2" bgcolor="#dddddd">&nbsp;</td>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                    <td bgcolor="#dddddd">&nbsp;</td>
+                </tr>
+            </table>
+
+
+Salidas:  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Como se puede observar en las salidas, el primer código html, utiliza el atributo rowspan=”2” para que la primer celda de la primer fila ocupe 2 espacios en esa columna.
+En el segundo código, se vuelve a utilizar el atributo colspan=”2” para modificar la longitud de la celda 2 veces su valor pero en la misma fila.
+ 
+
+
+g)
+        
+        <table width="200" border="1">
+            <tr>
+                <td colspan="3"><div align="center">Título</div></td>
+            </tr>
+            <tr>
+                <td colspan="2"rowspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="50%">&nbsp;</td>
+            </tr>
+        </table>
+
+
+________________
+
+
+
+
+
+
+        <table width="200" border="1" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="2"><div align="center">Título</div></td>
+            </tr>
+            <tr>
+                <td rowspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="50%">&nbsp;</td>
+            </tr>
+        </table>
+
+
+
+
+
+
+En el primer código, se modifica correctamente el espacio que va a ocupar el Título en la tabla, con una valor de 3 veces la longitud de una celda. En el segundo código, se crea una celda de 2 dimensiones de celda (en vez de 3, que sería lo correcto para ocupar todo el espacio) pero al tener definidos el cellpadding y cellspacing, y además ser la única celda de esa fila, ocupa todo el espacio de la tabla.
+En ambos casos se define que la longitud de la última celda generada es del 50% de la tabla y por tanto la salida queda: 
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h) <form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+<fieldset>
+                 <legend>LOGIN</legend>
+            Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+            Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+</fieldset>
+<input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+________________
+
+
+<form id="form2" name="form2" action="" method="get" target="_blank"> 
+LOGIN<br />
+                <label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+                <label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+                <input type="submit" id="boton2" name="boton2" value="Enviar" />
+  </form>
+________________
+
+
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain   method="post" target="_blank">
+                <fieldset>
+                    <legend>LOGIN</legend>
+                    Usuario: <input type="text" id="usu3" name="usu3" /><br />
+                    Clave: <input type="password" id="clave3" name="clave3" />
+                </fieldset>
+                <input type="reset" id="boton3" name="boton3" value="Enviar" />
+</form>
+
+
+  
+
+        
+i) 
+<label>Botón 1
+                <button type="button" name="boton1" id="boton1">
+                <img src="images/Logo UTN.png" alt="Botón con imagen " width="30" height="20"
+ /><br />
+                <b>CLICK AQUÍ</b></button></label>
+________________
+
+
+            <label>Botón 2
+            <input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+            </label>
+
+
+En la vista se ve la diferencia de los botones generados por cada código html, el primero, generado a través de los tags <button></button> de tipo “button” puede contener imágenes.
+Por otro lado, el segundo código genera un botón con el elemento vacío input.
+  
+
+        
+
+
+j) 
+    <p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+          <label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+________________
+
+
+    <p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+          <label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p> 
+
+
+Si bien la salida en pantalla es la misma, la segunda opción es la correcta ya que diferencia los nombres de cada elemento, y como es un seleccionador que se enviará lo elegido por el usuario al servidor, es necesario diferenciarlo.
+
+
+  
+  
+
+
+
+k)
+
+
+<select name="lista">
+                <optgroup label="Caso 1">
+                    <option>Mayo</option>
+                    <option>Junio</option>
+                </optgroup>
+                <optgroup label="Caso 2">
+                    <option>Mayo</option>
+                    <option>Junio</option>
+                </optgroup>
+    </select>
+________________
+
+
+<select name="lista[]" multiple="multiple" style="width: 120px; height: 120px;">
+                <optgroup label="Caso 1">  
+                    <option>Mayo</option>
+                    <option>Junio</option>
+                </optgroup>
+                <optgroup label="Caso 2">
+                    <option>Mayo</option>
+                    <option>Junio</option>
+                </optgroup>
+    </select>
+El primer caso representa una lista simple, en el que surge un único desplegable donde quedará alojado el elemento seleccionado.
+En el segundo caso, la forma en como se muestran los elementos cambia, para dar la posibilidad de seleccionar más de un elemento.
