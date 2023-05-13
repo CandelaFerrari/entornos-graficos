@@ -1,0 +1,125 @@
+#parent{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.91fr 1fr 1fr 1fr 2.42fr;
+    grid-template-areas:"arriba arriba arriba arriba"
+                        "columna fila fila fila"
+                        "columna uno dos tres"
+                        "columna cuatro cinco seis"
+                        "columna abajo1 abajo2 abajo2";
+    font-family: Helvetica, sans-serif;
+    grid-gap: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+#parent>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+#arriba,#fila,#dos,#cuatro,#seis,#abajo2{
+    background-color: rgb(153, 200, 245);
+
+}
+#uno,#tres,#cinco,#abajo1{
+    background-color: rgb(170, 151, 255);
+
+}
+#arriba{
+    grid-area: arriba;
+}
+#columna{
+    grid-area: columna;
+    background-color: rgb(238, 229, 209)
+}
+#fila{
+    grid-area: fila;
+}
+#uno{
+    grid-area: uno;
+}
+#dos{
+    grid-area:dos;
+}
+#tres{
+    grid-area: tres;
+}
+#cuatro{
+    grid-area: cuatro;
+}
+#cinco{
+    grid-area: cinco;
+}
+#seis{
+    grid-area: seis;
+}
+#abajo1{
+    grid-area: abajo1;
+}
+#abajo2{
+    grid-area: abajo2;
+}
+
+@media(max-width: 576px){
+    #parent{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.91fr 1.42fr 1fr 1fr 1fr 2.42fr;
+        grid-template-areas:"arriba arriba"
+                            "columna columna"
+                            "fila fila"
+                            "uno dos"
+                            "tres cuatro"
+                            "abajo1 abajo2";
+        font-family: Helvetica, sans-serif;
+        grid-gap: 5px;
+        text-align: center;
+    }
+    #parent>div{
+        border-radius: 2px;
+    
+    }
+    #arriba,#fila,#dos,#cuatro,#seis,#abajo2{
+        background-color: rgb(153, 200, 245);
+    
+    }
+    #uno,#tres,#cinco,#abajo1{
+        background-color: rgb(170, 151, 255);
+    
+    }
+    #arriba{
+        grid-area: arriba;
+    }
+    #columna{
+        grid-area: columna;
+        background-color: rgb(238, 229, 209);
+    }
+    #fila{
+        grid-area: fila;
+    }
+    #uno{
+        grid-area: uno;
+    }
+    #dos{
+        grid-area:dos;
+    }
+    #tres{
+        grid-area: tres;
+    }
+    #cuatro{
+        grid-area: cuatro;
+    }
+    #cinco{
+        display: none;
+    }
+    #seis{
+        display: none;
+    }
+    #abajo1{
+        grid-area: abajo1;
+    }
+    #abajo2{
+        grid-area: abajo2;
+    }
+}
